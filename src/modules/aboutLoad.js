@@ -12,9 +12,10 @@ export default function() {
     paragraph2.textContent = '(jimmy does not know history he copied this from wikipedia)';
 
     const paragraph3 = document.createElement('p');
-    paragraph3.textContent = '';
+    paragraph3.textContent = `anyways jimmy's restaurant the best EVER food, and a great variety of options, such as: Burger`;
 
     container.appendChild(head);
     container.appendChild(paragraph1);
     container.appendChild(paragraph2);
+    container.appendChild(paragraph3);
 };

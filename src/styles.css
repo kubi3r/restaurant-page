@@ -8,7 +8,7 @@ nav {
     display: flex;
     justify-self: center;
     gap: 32px;
-    margin: 16px;
+    margin-top: 24px;
 }
 
 nav button {
@@ -21,6 +21,7 @@ nav button {
 }
 
 div#content {
+    margin-top: 24px;
     border: 5px solid brown;
     width: 80vw;
     border-radius: 15px;
