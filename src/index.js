@@ -3,10 +3,6 @@ import menuLoad from './modules/menuLoad.js';
 import aboutLoad from './modules/aboutLoad.js';
 import './styles.css';
 
-homeLoad();
-
-
-let selected;
 
 function changeSelection(clickedEl, prevEl) {
     selected = clickedEl;
@@ -17,6 +13,8 @@ function changeSelection(clickedEl, prevEl) {
     };
 };
 
+homeLoad();
+let selected = document.querySelector('#home');
 
 document.querySelector('button#home').addEventListener('click', (e) => {
     changeSelection(e.target, selected);
