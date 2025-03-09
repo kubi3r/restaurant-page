@@ -4,17 +4,18 @@ import aboutLoad from './modules/aboutLoad.js';
 import './styles.css';
 
 
-function changeSelection(clickedEl, prevEl) {
-    selected = clickedEl;
+function changeSelection(add, remove) {
+    selected = add;
 
-    clickedEl.style.outline = '2px solid white';
-    if (prevEl) {
-        prevEl.style.outline = 'none';
+    add.style.outline = '2px solid white';
+    if (remove) {
+        remove.style.outline = 'none';
     };
 };
 
 homeLoad();
 let selected = document.querySelector('#home');
+changeSelection(selected, null)
 
 document.querySelector('button#home').addEventListener('click', (e) => {
     changeSelection(e.target, selected);
